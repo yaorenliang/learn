@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.learn</groupId>
+    <artifactId>learn</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>learn</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>design-pattern</module>
+        <module>sort-algorithm</module>
+    </modules>
+    <properties>
+        <!--Init-->
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring.boot.maven.plugin>2.3.2.RELEASE</spring.boot.maven.plugin>
+
+        <lombok>LATEST</lombok>
+    </properties>
+
+    <dependencies>
+        <!--整合 Lombok 框架-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
